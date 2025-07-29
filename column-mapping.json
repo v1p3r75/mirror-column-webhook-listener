@@ -1,0 +1,14 @@
+[
+  {
+    "from": {
+      "value": "task_status",
+      "label": "Statut",
+      "type": "status"
+    },
+    "to": {
+      "value": "color_mkt8hnhs",
+      "label": "Statut Copy",
+      "type": "status"
+    }
+  }
+]
