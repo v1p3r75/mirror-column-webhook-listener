@@ -6,9 +6,21 @@
       "type": "status"
     },
     "to": {
-      "value": "color_mkt8hnhs",
+      "value": "color_mkta6xzc",
       "label": "Statut Copy",
       "type": "status"
+    }
+  },
+  {
+    "from": {
+      "value": "text_mktar2v",
+      "label": "Texte",
+      "type": "text"
+    },
+    "to": {
+      "value": "text_mkta91ak",
+      "label": "Texte Copy",
+      "type": "text"
     }
   }
 ]

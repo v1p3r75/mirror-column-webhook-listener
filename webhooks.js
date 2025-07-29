@@ -18,9 +18,10 @@ app.use(bodyParser.json());
 const getValueByType = (type, value) => {
     switch (type) {
         case "status":
+            return value.label.text;
         case "text":
         case "long_text":
-            return value.label.text;
+            return value.value;
         default:
             return value.label.text;
     }
