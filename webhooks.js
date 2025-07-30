@@ -1,11 +1,11 @@
 import express from "express";
 import http from "http";
 import bodyParser from "body-parser";
+import "dotenv/config";
 import axios from "axios";
 import cors from "cors";
 import { readFile, writeFile } from "fs/promises";
 
-const token = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjU0MzgzNzUzOCwiYWFpIjoxMSwidWlkIjo3ODU5NzQwMCwiaWFkIjoiMjAyNS0wNy0yOFQxMzozMDo1My4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MzA0NTQ1OTYsInJnbiI6ImV1YzEifQ.3n79fspVbwOakpUOfdNkSyXuD7CCiV9Inoo02UfUYyo"
 const app = express();
 const server = http.createServer(app);
 app.use(cors({
@@ -86,7 +86,7 @@ app.post("/", function (req, res) {
                     {
                         headers: {
                             "Content-Type": "application/json",
-                            Authorization: token
+                            Authorization: process.env.TOKEN
                         }
                     }
                 ).then(response => {
